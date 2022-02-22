@@ -1,0 +1,55 @@
+/*Design da página*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*DIV PRINCIPAL*/
+#main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/*IMAGENS*/
+picture{
+    margin: 20px 0 20px 0;
+}
+picture > img{
+    width: 45%;
+    height: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black; 
+}
+/*FORMULÁRIO*/
+ form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+     
+ }
+/*DADOS A E B*/
+
+ form > div.dados_gerais,div.dados_a,div.dados_b{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+ }
+
+div.dados_a,div.dados_b{
+    border-top: 3px solid black;
+    padding: 5px;
+    margin:5px;
+    width: 300px;
+}
+div.dados_a > label{
+    margin: 5px 0 5px 0;
+}
+div.dados_b > label{
+    margin: 5px 0 5px 0;
+}
+
+/*Fonte da página*/
