@@ -32,7 +32,9 @@ function calcular(){
     
     let coef_2 = (((1.8583*(10**-7))*temperatura**(3/2))/(pressao*(sigma_ab**2)*fator_de_omega))*((1/massa_a)+(1/massa_b))**(1/2);
     console.log(Coef_dif_ab);
-    console.log(coef_2);
+    let resposta = Coef_dif_ab.toString();
+    document.getElementById('final').textContent = resposta +" m2/s";
+    
 
 }
 

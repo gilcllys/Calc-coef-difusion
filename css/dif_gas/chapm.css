@@ -4,11 +4,23 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    background-color: hsla(138, 77%, 33%, 0.623);
+}
 /*DIV PRINCIPAL*/
 #main{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+#main >h1{
+    color: black;
+    text-shadow: 
+               -1px -1px 0px #FFF, 
+               -1px 1px 0px #FFF,      
+                1px -1px 0px #FFF,    
+                1px 0px 0px #FFF;
 }
 /*IMAGENS*/
 picture{
@@ -24,6 +36,8 @@ picture > img{
 }
 /*FORMULÁRIO*/
  form{
+     background-color: white;
+     border-radius: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -52,4 +66,26 @@ div.dados_b > label{
     margin: 5px 0 5px 0;
 }
 
-/*Fonte da página*/
+/*botão*/
+button{
+    height: 35px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/*resposta*/
+.resposta{
+    border: 1px solid black;
+    margin: 25px;
+    width: fit-content;
+    height: 50px;
+    background-color: aqua;
+}
+#final{
+    
+    text-align: center;
+}
