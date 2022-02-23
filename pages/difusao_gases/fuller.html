@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Correlação de fuller, Schetter e Giddings</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/dif_gas/chapm.css" />
+    <script src="/JS/difusao_gases/fuller.js" ></script>
+    <title>Equação de Chapman-Enskog</title>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Correlação de Fuller, Schetter e Giddings</h1>
+      <picture>
+        <img src="imagens/form_fuller.png" alt="" />
+        <img src="imagens/complemento-fuller.png" alt="" />
+      </picture>
+      <form>
+        <h5>Insira os dados nos espações abaixo</h5>
+        <div class="dados_gerais">
+          <label for="temp">Temperatura (K)</label>
+          <input type="number" name="temp" id="temp" />
+
+          <label for="pressao">Pressão (atm)</label>
+          <input type="number" name="pressao" id="pressao" />
+        </div>
+
+        <div class="dados_a">
+          <p>Dados do componente A</p>
+          <label for="mass_a">Massa molar de A (Kg/kmol):</label>
+          <input type="number" name="mass_a" id="mass_a" />
+
+          <label for="temp_a">Volume atômico, ∑va (cm3/mol):</label>
+          <input type="number" name="vol_a" id="vol_a" />
+
+        </div>
+        <div class="dados_b">
+          <p>Dados do componente B</p>
+
+          <label for="mass_a">Massa molar de B (Kg/kmol):</label>
+          <input type="number" name="mass_b" id="mass_b" />
+
+          <label for="temp_a">Volume atômico, ∑vb (cm3/mol):</label>
+          <input type="number" name="vol_b" id="vol_b" />
+
+        </div>
+      </form>
+      <button onclick="calcular()">Calcular</button>
+      <div class="resposta">
+        <h1 id="final">
+          ------
+        </h1>
+      </div>
+    </div>
+  </body>
 </html>
