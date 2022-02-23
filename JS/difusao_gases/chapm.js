@@ -28,8 +28,11 @@ function calcular(){
     let fator_de_omega = (1/E_ab)*temperatura;
     let omega_ab = (1.06036/(fator_de_omega**0.15610))+(0.19300/(euler**(0.47635*fator_de_omega))) +(1.03587/(euler**(1.52996*fator_de_omega))) +(1.76474/(euler**(3.89411*fator_de_omega)));
 
-    let Coef_dif_ab = (((1.8583*10**-7)*temperatura**(3/2))/(pressao*(sigma_ab**2)*omega_ab))*((1/massa_a)+(1/massa_b))**(1/2);
+    let Coef_dif_ab = (((1.8583*(10**-7))*temperatura**(3/2))/(pressao*(sigma_ab**2)*omega_ab))*((1/massa_a)+(1/massa_b))**(1/2);
+    
+    let coef_2 = (((1.8583*(10**-7))*temperatura**(3/2))/(pressao*(sigma_ab**2)*fator_de_omega))*((1/massa_a)+(1/massa_b))**(1/2);
     console.log(Coef_dif_ab);
+    console.log(coef_2)
     
 
 }
