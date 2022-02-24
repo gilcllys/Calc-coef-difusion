@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    background-color: rgba(74, 173, 28, 0.76);
+    background-image: 'giphy.gif';
+    padding: 20px;
+}
+#main{
+    width: fit-content;
+    background-color: rgb(29, 26, 26);
+    padding: 80px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black ;
+    border-radius: 10px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+li{
+    list-style: none;
+    margin: 25px;
+}
+
+a{
+    text-decoration: none;
+    border: 3px solid rgb(60, 255, 0);
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+a:hover{
+    border: 3px solid rgb(60, 255, 0);
+    color: white;
+    background-color: black;
+}
+
+p{
+    margin-bottom: 30px;
+}

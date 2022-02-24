@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/dif_gas/chapm.css" />
+    <script src="/JS/difusao_liq/stoke.js" ></script>
+    <title>Equação de Stokes-Einstein</title>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Equação de Stokes-Einstein</h1>
+      <picture>
+        <img src="imagens/einstein.png" alt="" />
+        <img src="imagens/einst_info.png" alt="" />
+      </picture>
+      <form>
+        <h5>Insira os dados nos espações abaixo</h5>
+        <div class="dados_gerais">
+          <label for="temp">Temperatura (K)</label>
+          <input type="number" name="temp" id="temp" />
+
+          <label for="pressao">Viscosidade da solução (Pa.s ou Kg/m.s)</label>
+          <input type="number" name="visco" id="visco" />
+        </div>
+
+        <div class="dados_a">
+          <p>Dados do componente A</p>
+          <label for="mass_a">Va, Volume molar do soluto na Teb normal (m3/kmol):</label>
+          <input type="number" name="vol_a" id="vol_a" />
+
+        </div>
+      </form>
+      <button onclick="calcular()">Calcular</button>
+      <div class="resposta">
+        <h1 id="final">
+          ------
+        </h1>
+      </div>
+      <a href="formulas.html">Voltar </a>
+    </div>
+  </body>
+</html>

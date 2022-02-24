@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsla(138, 77%, 33%, 0.623);
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+#main>h1{
+    color: black;
+    margin: 15px 0 15px 0;
+    text-shadow: 
+               -1px -1px 0px #FFF, 
+               -1px 1px 0px #FFF,      
+                1px -1px 0px #FFF,    
+                1px 0px 0px #FFF;
+}
+/*------------------------------*/
+.chapm{
+    padding: 6px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.chapm > a{
+    margin: 10px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+.chapm > a:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+/*------------------------------*/
+.fuller{
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width:fit-content;
+    margin-bottom: 20px;
+}
+
+.fuller > a{
+    height: 35px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+
+.fuller > a:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+a{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a:hover{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
