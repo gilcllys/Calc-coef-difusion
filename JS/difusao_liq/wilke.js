@@ -12,8 +12,8 @@ function calcular(){
 
     let Coef_dif_ab = ((1.173*10**-16)*((assoc*mass_b)**(1/2))*temperatura)/(visc_b*vol_a**0.6);
 
-    if(vol_a < 0.5){
-        alert('Volume molar de A incorreto, não respeita a condição de Va > 0,5. CORRIGA O VALOR AGORA');
+    if(vol_a > 0.5){
+        alert('Volume molar de A incorreto, não respeita a condição de Va < 0,5. CORRIGA O VALOR AGORA');
     }else{
         console.log(Coef_dif_ab);
         let resposta = Coef_dif_ab.toString();
