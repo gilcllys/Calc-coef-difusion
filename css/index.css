@@ -29,11 +29,12 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center; 
+    margin-bottom: 10px;
 }
 
 li{
     list-style: none;
-    margin: 25px;
+    margin: 15px;
 }
 
 a{
@@ -52,5 +53,5 @@ a:hover{
 }
 
 p{
-    margin-bottom: 30px;
+    margin: 10px 0 10px 0;
 }
